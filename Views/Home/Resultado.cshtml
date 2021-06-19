@@ -1,0 +1,46 @@
+﻿@model CadastroProd.Models.Produto
+@{
+    ViewBag.Title = "Resultado";
+}
+
+<h2>Cadastro de produtos não perecíveis</h2>
+<fieldset>
+    <legend>Dados do produto</legend>
+    <div class="editor-label">
+        Código
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Codigo)
+    </div>
+    <div class="editor-label">
+        Nome do produto
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.NomeProd)
+    </div>
+    <div class="editor-label">
+      Descrição
+    </div>
+    <div class=" editor-field">
+        @Html.DisplayFor(model => model.Descricao)
+    </div>
+    <div class="editor-label">
+       Peso
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Peso)
+    </div>
+    <div class="editor-label">
+        Categoria
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Categoria)
+    </div>
+    <div class="editor-label">
+        Valor Unitário
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.ValorUnit)
+    </div>
+    <p>@Html.ActionLink("Voltar", "Index")</p>
+</fieldset>
